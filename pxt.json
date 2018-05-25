@@ -1,0 +1,20 @@
+{
+    "name": "DS1820",
+    "version": "0.0.1",
+    "description": "Jordan Electronics",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "ds1820.ts",
+        "ds1820.cpp",
+        "shims.d.ts",
+        "enums.d.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}
