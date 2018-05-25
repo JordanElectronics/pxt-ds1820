@@ -3,7 +3,7 @@
 * May, 2018
 * Based on Weatherbit code from Sparkfun:
 * https://github.com/sparkfun/pxt-weather-bit
-
+*
 * Development environment specifics:
 * Written in Microsoft PXT
 *
@@ -11,7 +11,7 @@
 * Distributed as-is; no warranty is given.
 */
 
-//% color=#f44242 icon="\u26C8"
+//% color=#5042f4 icon="\uf491"
 namespace DS1820 {
 
     // Functions for interfacing with the DS1820
