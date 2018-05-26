@@ -12,7 +12,7 @@ DS18B20 Pre-wired waterproof digital temperature sensor
 ## Hardware Details
 For the pre-wired sensor: Red connects to 3V-5V, Blue/Black connects to ground, and Yellow/White is data.
 
-## Hardware Connection
+## Hardware Connections
 Use a 4.7K resistor as pull-up for the data pin.
 
 The Microbit has to both read from and write to the data pin of the DS1820. Although the DS1820 has only a single pin for data, it is necessary to use two pins on the Microbit. One for reading and one for writing data. This is due to the strict timing requirements of the DS1820. Each time a pin on the Microbit is transitioning from read-mode to write-mode it takes a certain time. Using two pins - one or reading and one for writing - the transitioning between read-mode and write-mode is avoided.
@@ -25,7 +25,7 @@ Connect 3V and GND to the DS1820 as well.
 
 After adding the DS1820 package in MakeCode, the block "Temperature(C)" is used to retrieve the temperature from the DS1820.
 
-The "Temperature(C)" takes two parameters: Pin1 and Pin2. These are the two pins on the Microbit which is connected to the DS1820 sensor.
+The "Temperature(C)" takes two parameters: Pin1 and Pin2. These are the two pins on the Microbit which are connected to the DS1820 sensor.
 
 The value returned by the "Tempareature(C)" block is the temparature *100.
 
