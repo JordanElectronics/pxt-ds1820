@@ -35,7 +35,7 @@ The DS1820 read/write code is developed by Sparkfun for their [weatherbit](https
 This is a generalized version of the code that can be used for any project with a DS1820 sensor on any two Microbit pins.
 
 ## Supported Targets
-PXT / Microbit
+for PXT/microbit
 
 ## License
 MIT
