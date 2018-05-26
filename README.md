@@ -1,5 +1,26 @@
-# pxt-ds1820
-DS1820 Temperature Sensor MakeCode Package for Microbit 
+# DS1820 Temperature Sensor MakeCode Package for Microbit 
 
+## Supported Hardware
 ![](https://github.com/JordanElectronics/pxt-ds1820/blob/master/icon.png)
+DS1820 digital temperature sensor
+or 
+DS1820 Pre-wired waterproof digital temperature sensor
 
+## Hardware Details
+For the pre-wired sensor: Red connects to 3V-5V, Blue/Black connects to ground, and Yellow/White is data.
+
+## Hardware Connection
+Use a 4.7K resistor as pull-up for the data pin.
+
+The Microbit has to both read from and write to the data pin of the DS1820. Although the DS1820 has only a single pin for data, it is necessary to use two pins on the Microbit. One for reading and one for writing data. This is due to the strict timing requirements of the DS1820. Each time a pin on the Microbit is transitioning from read-mode to write-mode it takes a certain time. Using two pins - one or reading and one for writing - the transitioning between read-mode and write-mode is avoided.
+
+The two pins on the Microbit are connected to the single data pin on the DS1820 with a 4.7K pull-up resistor.
+
+## Acknowledgements
+The actual DS1820 read/write code is developed by Sparkfun for their [weatherbit](https://www.sparkfun.com/products/14214)
+
+## Supported Targets
+PXT / Microbit
+
+#License
+MIT
