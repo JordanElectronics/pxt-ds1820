@@ -3,11 +3,11 @@
 ## Supported Hardware
 ![](https://github.com/JordanElectronics/pxt-ds1820/blob/master/icon.png)
 
-DS1820 digital temperature sensor
+DS18B20 digital temperature sensor
 
 or 
 
-DS1820 Pre-wired waterproof digital temperature sensor
+DS18B20 Pre-wired waterproof digital temperature sensor
 
 ## Hardware Details
 For the pre-wired sensor: Red connects to 3V-5V, Blue/Black connects to ground, and Yellow/White is data.
@@ -20,6 +20,14 @@ The Microbit has to both read from and write to the data pin of the DS1820. Alth
 The two pins on the Microbit are connected to the single data pin on the DS1820 with a 4.7K pull-up resistor.
 
 Connect 3V and GND to the DS1820 as well.
+
+## Block
+
+After adding the DS1820 package in MakeCode, the block "Temperature(C)" is used to retrieve the temperature from the DS1820.
+
+The "Temperature(C)" takes two parameters: Pin1 and Pin2. These are the two pins on the Microbit which is connected to the DS1820 sensor.
+
+The value returned by the "Tempareature(C)" block is the temparature *100.
 
 ## Acknowledgements
 The DS1820 read/write code is developed by Sparkfun for their [weatherbit](https://www.sparkfun.com/products/14214)
