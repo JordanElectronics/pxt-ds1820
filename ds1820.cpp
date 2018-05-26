@@ -40,7 +40,7 @@ enum class Pins{
 };
 
 namespace DS1820 {
-    MicroBitPin WritePin; = uBit.io.P12;
+    MicroBitPin WritePin = uBit.io.P12;
     MicroBitPin ReadPin = uBit.io.P13;
 
     uint8_t init() {
