@@ -18,14 +18,14 @@ namespace DS1820 {
 
     /**
      * Reads the temperature from the one-wire temperature sensor.
-	 * Returns a 4 digit number. value should be divided by 100 to get 
-	 *temperature in hundreths of a degree centigrade. 
-	 * block="Temperature(C)"
+     * Returns a 4 digit number. value should be divided by 100 to get 
+     *temperature in hundreths of a degree centigrade. 
+     * block="Temperature(C)"
      */
     //% weight=10 blockId="DS1820_Temp" 
-    //% shim=DS1820::tempFunc
-    //% block="Temperature(C) Pin 1 %Pin1|Pin 2 %Pin2"
-    export function Temperature(InPin: Pins, OutPin: Pins): number {
+    //% shim=DS1820::Temperature
+    //% block="Temperature(C) Pin 1 %InPin|Pin 2 %OutPin"
+    export function Temperature(InPin: number, OutPin: number): number {
         // Fake function for simulator
         return 0
     }
