@@ -17,28 +17,6 @@
 
 using namespace pxt;
 
-enum class Pins{
-  P0=  3,
-  P1=  2,
-  P2=  1,
-  P3=  4,
-  P4=  5,
-  P5=  17,
-  P6=  12,
-  P7=  11,
-  P8=  18,
-  P9=  10,
-  P10= 6,
-  P11= 26,
-  P12= 20,
-  P13= 23,
-  P14= 22,
-  P15= 21,
-  P16= 16,
-  P19= 0,
-  P20= 30
-};
-
 namespace DS1820 {
     MicroBitPin WritePin = uBit.io.P12;
     MicroBitPin ReadPin = uBit.io.P13;
@@ -138,54 +116,7 @@ namespace DS1820 {
     }
 
     //%
-    int16_t Temperature(int InPin, int OutPin) {
-        
-        switch (InPin) {
-            case 0: ReadPin = uBit.io.P0; break;
-            case 1: ReadPin = uBit.io.P1; break;
-            case 2: ReadPin = uBit.io.P2; break;
-            case 3: ReadPin = uBit.io.P3; break;
-            case 4: ReadPin = uBit.io.P4; break;
-            case 5: ReadPin = uBit.io.P5; break;
-            case 6: ReadPin = uBit.io.P6; break;
-            case 7: ReadPin = uBit.io.P7; break;
-            case 8: ReadPin = uBit.io.P8; break;
-            case 9: ReadPin = uBit.io.P9; break;
-            case 10: ReadPin = uBit.io.P10; break;
-            case 11: ReadPin = uBit.io.P11; break;
-            case 12: ReadPin = uBit.io.P12; break;
-            case 13: ReadPin = uBit.io.P13; break;
-            case 14: ReadPin = uBit.io.P14; break;
-            case 15: ReadPin = uBit.io.P15; break;
-            case 16: ReadPin = uBit.io.P16; break;
-            case 19: ReadPin = uBit.io.P19; break;
-            case 20: ReadPin = uBit.io.P20; break;
-            //default: ReadPin = uBit.io.P12;
-        }
-        switch (OutPin) {
-            case 0: WritePin = uBit.io.P0; break;
-            case 1: WritePin = uBit.io.P1; break;
-            case 2: WritePin = uBit.io.P2; break;
-            case 3: WritePin = uBit.io.P3; break;
-            case 4: WritePin = uBit.io.P4; break;
-            case 5: WritePin = uBit.io.P5; break;
-            case 6: WritePin = uBit.io.P6; break;
-            case 7: WritePin = uBit.io.P7; break;
-            case 8: WritePin = uBit.io.P8; break;
-            case 9: WritePin = uBit.io.P9; break;
-            case 10: WritePin = uBit.io.P10; break;
-            case 11: WritePin = uBit.io.P11; break;
-            case 12: WritePin = uBit.io.P12; break;
-            case 13: WritePin = uBit.io.P13; break;
-            case 14: WritePin = uBit.io.P14; break;
-            case 15: WritePin = uBit.io.P15; break;
-            case 16: WritePin = uBit.io.P16; break;
-            case 19: WritePin = uBit.io.P19; break;
-            case 20: WritePin = uBit.io.P20; break;
-            //default: WritePin = uBit.io.P13;
-        }
-
-
+    int16_t Temperature() {
         init();
         writeByte(0xCC);
         convert();

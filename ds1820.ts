@@ -24,8 +24,8 @@ namespace DS1820 {
      */
     //% weight=10 blockId="DS1820_Temp" 
     //% shim=DS1820::Temperature
-    //% block="Temperature(C) Pin 1 %InPin|Pin 2 %OutPin"
-    export function Temperature(InPin: number, OutPin: number): number {
+    //% block="Temperature(C)"
+    export function Temperature(): number {
         // Fake function for simulator
         return 0
     }
