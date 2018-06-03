@@ -1,6 +1,6 @@
 {
     "name": "DS1820",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Jordan Electronics",
     "license": "MIT",
     "dependencies": {
